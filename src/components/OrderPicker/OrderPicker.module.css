@@ -1,0 +1,11 @@
+.title {
+    padding: 4rem;
+    text-align: center;
+    font-size: 50px;
+}
+
+.first-section {
+    width: 75%;
+    padding: 20px;
+    border: 2px dashed blue;
+}

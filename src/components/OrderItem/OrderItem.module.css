@@ -1,0 +1,38 @@
+.orderItem-div {
+    border: 1px solid #000;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-deleteButton {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.delete-button {
+    height: 35px;
+    width: 35px;
+    background-color: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.delete-button:hover {
+    background-color: crimson;
+}
+
+.add-products {
+    height: 75%;
+    width: 80%;
+    border-bottom: 1px solid red;
+    border-radius: 3px;
+    background-color: #e7e5e5;
+}
