@@ -2,51 +2,12 @@ import React from 'react'
 import Product from '../Product/Product'
 import styles from './ProductList.module.css'
 
-function ProductList() {
-
-  const products = [
-    {
-      id: 0,
-      name: "🍔",
-      price: 100,
-      quantity: 0
-    },
-    {
-      id: 1,
-      name: "🍟",
-      price: 50,
-      quantity: 0  
-    },
-    {
-      id: 2,
-      name: "🍦",
-      price: 100,
-      quantity: 0
-    },
-    {
-      id: 3,
-      name: "🥤",
-      price: 65,
-      quantity: 0 
-    },
-    {
-      id: 4,
-      name: "🥦",
-      price: 250,
-      quantity: 0 
-    },
-    {
-      id: 5,
-      name: "🍜",
-      price: 200,
-      quantity: 0 
-    } 
-  ]
+function ProductList({products, onClickHandler}) {
 
   return (
         <div className={styles["products-container"]}>
             {products.map((product) => (
-               <Product product={product} />
+               <Product key={product.id} onClickHandler={onClickHandler} product={product} />
             ))}
         </div>
   )
