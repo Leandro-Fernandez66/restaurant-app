@@ -1,9 +1,17 @@
-import React from 'react'
-import OrderPage from './components/OrderPage/OrderPage'
+//import React, {useState} from 'react'
+import OrderPicker from './components/OrderPicker/OrderPicker'
+import Order from './components/Order/Order'
+import './App.css'
 
 function App() {
+
+  //const [products, setProducts] = useState([])
+
   return (
-   <OrderPage />
+   <div className='main'>
+     <OrderPicker />
+     <Order />
+   </div>
   )
 }
 

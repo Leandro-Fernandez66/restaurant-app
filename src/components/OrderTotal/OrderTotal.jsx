@@ -2,7 +2,7 @@ import React from 'react'
 
 function OrderTotal() {
   return (
-    <span>Total</span>
+    <span>Total $550</span>
   )
 }
 

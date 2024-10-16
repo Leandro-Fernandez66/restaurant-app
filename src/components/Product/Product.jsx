@@ -17,9 +17,21 @@ export default Product
 
 
 
-//<div>
-// <span>{props.id}</span>
-// <p className={styles.icon}>{props.name}</p>
-// <p>{props.price}</p>
-// <p>{props.quantity}</p>
-//</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

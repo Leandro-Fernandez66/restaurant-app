@@ -2,7 +2,9 @@ import React from 'react'
 import Product from '../Product/Product'
 import styles from './ProductList.module.css'
 
-const products = [
+function ProductList() {
+
+  const products = [
     {
       id: 0,
       name: "🍔",
@@ -41,7 +43,6 @@ const products = [
     } 
   ]
 
-function ProductList() {
   return (
         <div className={styles["products-container"]}>
             {products.map((product) => (
@@ -52,8 +53,3 @@ function ProductList() {
 }
 
 export default ProductList  
-
-
-
-
-//<Product id={product.id} name={product.name} price={product.price} quantity={product.quantity} />

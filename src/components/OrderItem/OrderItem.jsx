@@ -1,6 +1,7 @@
 import React from 'react'
 import OrderTotal from '../OrderTotal/OrderTotal'
 import styles from './OrderItem.module.css'
+import Cart from '../Cart/Cart'
 
 function OrderItem() {
   return (
@@ -9,7 +10,10 @@ function OrderItem() {
         <h2>Order List</h2>
         <button className={styles["delete-button"]}>🗑</button>
       </div>  
-        <div className={styles["add-products"]}></div>
+        <div className={styles["add-products"]}>
+          <Cart name={"🍟"}  price={50} quantity={1} />
+          <Cart name={"🥦"}  price={500} quantity={2} />
+        </div>
         <OrderTotal />
     </div>
   )

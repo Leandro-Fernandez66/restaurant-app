@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: baseline;
+    width: 80%;
+    background-color: rgb(108, 173, 130);
+    margin: 0 auto;
+    margin-top: 8px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.button {
+    cursor: pointer;
+}
