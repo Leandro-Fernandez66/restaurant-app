@@ -1,8 +1,8 @@
 import React from 'react'
 
-function OrderTotal() {
+function OrderTotal({totalSale}) {
   return (
-    <span>Total $550</span>
+    <span>Total ${totalSale}</span>
   )
 }
 
