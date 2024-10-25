@@ -5,6 +5,7 @@ function Product({product, onClickHandler}) {
   return (
     <div className={styles["card-product"]} onClick={() => onClickHandler(product.id)}>
       <p className={styles.icon}>{product.name}</p>
+      <div className={styles.stock}>{product.quantity}<span className={styles.span}>stock</span></div>
     </div>    
   )
 }

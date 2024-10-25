@@ -4,10 +4,24 @@
 }
 
 .card-product {
-    height: 145px;
+    height: 155px;
     width: calc(33.3% - 1rem);
     flex-grow: 1;
     border: 1px solid #333;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.stock {
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: aqua;
+    width: 20%;
+    border-radius: 3px;
+}
+
+.span {
+    font-size: 14px;
+    color: #333;
+    padding-left: 0.5rem;
 }
