@@ -10,37 +10,43 @@ function App() {
       id: 0,
       name: "🍕",
       price: 100,
-      quantity: 99
+      quantity: 1,
+      stock: 99
     },
     {
       id: 1,
       name: "🍟",
       price: 50,
-      quantity: 99  
+      quantity: 1,
+      stock: 99  
     },
     {
       id: 2,
       name: "🍦",
       price: 100,
-      quantity: 99
+      quantity: 1,
+      stock: 99
     },
     {
       id: 3,
       name: "🥤",
       price: 65,
-      quantity: 99 
+      quantity: 1,
+      stock: 99 
     },
     {
       id: 4,
       name: "🥦",
       price: 250,
-      quantity: 99 
+      quantity: 1,
+      stock: 99 
     },
     {
       id: 5,
       name: "🍜",
       price: 200,
-      quantity: 99 
+      quantity: 1,
+      stock: 99 
     } 
   ]
 
@@ -52,12 +58,12 @@ function App() {
 
   const onClickHandler = (productId) => {
     const updateStockProduct = () => {
-      const updateStock = products.map(product => product.id === productId ? {...product, quantity: product.quantity - 1} : product)
+      const updateStock = products.map(product => product.id === productId ? {...product, stock: product.stock - 1} : product)
       setProducts(updateStock)
     }
 
     const notSellProduct = products.find((product) => product.id === productId)
-    if (notSellProduct.quantity < 1) {
+    if (notSellProduct.stock < 1) {
       alert(`no se disponen de mas ${notSellProduct.name}`)
     } else {
     const duplicateProduct = cart.find((duplicate) => duplicate.id === productId)
@@ -66,7 +72,6 @@ function App() {
       const objetProduct = hardCodeProducts[idProductAdded]
       const newProduct = [...cart, objetProduct]
       updateStockProduct()
-      newProduct.map(newCart => newCart.id === productId ? {...newCart, quantity: newCart.quantity = 1} : newCart)
       setCart(newProduct)
      } else {
       const newCarts = cart.map(newCart => newCart.id === productId ? {...newCart, quantity: newCart.quantity + 1} : newCart)
